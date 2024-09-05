@@ -19,9 +19,9 @@ function UploadForm() {
     <div className={`container mt-4 ${styles.uploadFormContainer}`}>
       <div className="row">
         <div className="col-md-6 offset-md-3">
-          <div className="card">
+          <div className="card bg-secondary">
             <div className="card-body">
-              <h5 className="card-title">Upload Document</h5>
+              <h5 className="card-title text-dark"><b>Upload Document</b></h5>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <input 
@@ -30,7 +30,7 @@ function UploadForm() {
                     onChange={handleFileChange} 
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">Upload</button>
+                <button type="submit" className="btn btn-dark text-light">Upload</button>
               </form>
             </div>
           </div>
